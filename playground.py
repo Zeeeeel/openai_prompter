@@ -65,7 +65,7 @@ class StreamingThread(threading.Thread):
         self.stopped = True
 
 # Set the API key
-openai.api_key = "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"
+openai.api_key = ""
 
 
 # Create a new Tkinter window
