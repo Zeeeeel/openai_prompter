@@ -68,7 +68,6 @@ class StreamingThread(threading.Thread):
 # Set the API key=
 openai.api_key = os.environ.get('OpenAIToken') 
 
-
 # Create a new Tkinter window
 root = tk.Tk()
 root.title("OpenAI Text Completion")
@@ -79,7 +78,7 @@ template_label = tk.Label(root, text="Select template:")
 template_label.pack()
 
 # Load the JSON file
-with open("template.json", "r") as read_file:
+with open("/Users/ziyeliu/Code/play_ground/template.json", "r") as read_file:
     data = json.load(read_file)
 
 # Get all the options from the JSON file
