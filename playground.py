@@ -1,4 +1,5 @@
 import json
+import os
 import threading
 import tkinter as tk
 
@@ -33,7 +34,7 @@ class StreamingThread(threading.Thread):
     def __init__(self, prompt, selected_template, echo_check):
         super().__init__()
         self.selected_template = selected_template
-        template = json.dumps(data[self.selected_template])
+        template = data[self.selected_template]
         self.prompt = template+prompt
         self.stopped = False
         self.echo_check = echo_check
@@ -49,6 +50,8 @@ class StreamingThread(threading.Thread):
             temperature=0,
             stream=True,
         )
+        if self.echo_check:
+            output_text.insert("end", self.prompt)
         for completion in completions:
             if not self.stopped:
                 # Insert the completed text into the output text widget
@@ -58,15 +61,12 @@ class StreamingThread(threading.Thread):
                 break
             if self.stopped:
                 break
-        if self.echo_check:
-            output_text.insert("1.0", self.prompt)
 
     def stop(self):
         self.stopped = True
 
-# Set the API key
-openai.api_key = ""
-
+# Set the API key=
+openai.api_key = os.environ.get('OpenAIToken')
 
 # Create a new Tkinter window
 root = tk.Tk()
