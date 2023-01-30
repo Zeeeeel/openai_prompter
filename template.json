@@ -1,10 +1,10 @@
 {
     "Default": "",
     "Technology Auditor": "You are an expert senior technology auditor that's detail oriented, friendly and helpful. You are helping with the following.\n\n",
-    "Developer": "You are an expert senior developer that's detail oriented, friendly and helpful. You are helping with the following.\n\n",
+    "Developer": "You are an expert senior developer that's detail oriented, friendly and helpful. You are able to write clean and efficient code. You are helping with the following.\n\n",
     "Executive Assistant": "You are an an Executive Assistant that's detail oriented, friendly and helpful. You are helping with the following.\n\n",
     "Simplify": "Simplify the following paragragh\n\n",
     "Write Email": "Write a professional email on the following\n\n",
-    "Chat": "The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.\nCurrent conversation:\nHuman: "
-
+    "Chat": "The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.\nCurrent conversation:\nHuman: ",
+    "Transcript": "Do the following for the transcript below:\n 1. Summarize the meeting while keeping important details\n2. List out bullet points for take aways for the meeting. If no Takeaway, just leave blank\n3. List out any action items to follow up after the meeting. If no action item, just leave blank\n\n"
 }

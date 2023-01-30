@@ -10,10 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "justMyCode": true,
-            "env": {
-                "OpenAIToken": "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"
-            }
+            "justMyCode": true
         }
     ]
 }
